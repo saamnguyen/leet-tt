@@ -1,10 +1,11 @@
 package easy;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
-    public  int[] twoSum(int[] numbers, int target){
+    public    int[] twoSum(int[] numbers, int target){
         int[] result = new int[2];
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 
@@ -24,6 +25,8 @@ public class TwoSum {
         int[] arr = new int[]{2, 3, 4, 5, 7};
         int target = 9;
 
-        System.out.println(twoSum.twoSum(arr, target).toString());
+        //System.out.println(arr);
+
+        System.out.println(Arrays.toString(twoSum.twoSum(arr, target)));
     }
 }
