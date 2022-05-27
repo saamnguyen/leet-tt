@@ -6,7 +6,7 @@ public class SearchInsertPosition {
         int high = nums.length - 1;
 
         //binary search
-        while (low < high){
+        while (low <= high){
             int mid = (high + low) / 2;
             if(nums[mid] == target) return mid;
             else if(nums[mid] > target) high = mid - 1;
@@ -18,7 +18,7 @@ public class SearchInsertPosition {
     public static void main(String[] args) {
         SearchInsertPosition searchInsertPosition = new SearchInsertPosition();
 
-        System.out.println(searchInsertPosition.searchInsert(new int[]{1, 3, 5, 6}, 7));
+        System.out.println(searchInsertPosition.searchInsert(new int[]{1, 3, 5, 6}, 2));
     }
 }
 //
