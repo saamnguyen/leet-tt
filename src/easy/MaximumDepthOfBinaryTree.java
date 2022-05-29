@@ -4,12 +4,16 @@ public class MaximumDepthOfBinaryTree {
     public int maxDepth(TreeNode2 root) {
         if(root == null) return 0;
 
-        int left = maxDepth(root.left);
-        System.out.println(left + " left");
-        int right = maxDepth(root.right);
-        System.out.println(right + " right");
+        //cham hon
+//        int left = maxDepth(root.left);
+//        System.out.println(left + " left");
+//        int right = maxDepth(root.right);
+//        System.out.println(right + " right");
+//
+//        return Math.max(left, right) + 1;
 
-        return Math.max(left, right) + 1;
+        //Lam tat nhanh hon 100%
+        return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
     }
 
     public static void main(String[] args) {
